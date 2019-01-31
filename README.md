@@ -1,6 +1,6 @@
 # Cheng's Kogan Test
 
-This project is for my [Kogan Code Chanllenge](https://kogan-recruitment.herokuapp.com/challenge/e7611d8085963218c6701087fadbe79c/)
+This project is for my [Kogan Code Challenge](https://kogan-recruitment.herokuapp.com/challenge/e7611d8085963218c6701087fadbe79c/)
 
 ## Local installation
 
