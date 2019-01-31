@@ -1,0 +1,7 @@
+Flask==1.0.2
+flask_cors==3.0.7
+gevent==1.4.0
+requests==2.21.0
+WSGIserver==1.3
+requests-mock==1.5.2
+pytest==4.2.0

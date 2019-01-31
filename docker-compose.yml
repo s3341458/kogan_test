@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  api_consumer:
+    build:
+      context: flask_api_consumer
+    image: chengyu0316/kogan_api_test_backend
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - ./flask_api_consumer:/app
+    command: ['python', 'flaskr.py']
+    ports:
+      - "4000:4000"
