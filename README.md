@@ -13,20 +13,22 @@ The local development environment requires:
 
 ### manual test
 
-Start up the website
+Start up the website:
+
     docker-compose up
 
 Open any browser and visit [Test Website](http://127.0.0.1:4000/)
 
 ### autotest
 
-Run unit tests
+Run unit tests:
+
     docker-compose run api_consumer pytest
 
 ### Needs to mention
 
-+ The main logic is in [project/dir]/flask_api_consumer/api.py
++ The main logic and fun stuff is in [api.py](https://github.com/s3341458/kogan_test/blob/master/flask_api_consumer/api.py)
++ Due to the time limitation, I ignored pydoc stuff although I know it is a important thing that you want to test.
++ Due to the time limitation, I ignored the error handlings part which is actually really important for handling api response.
 + I used a more "functional" way to do the work instead of a more "Pythonic" way for interests reason.
   This does not mean I can not write "Pythonic" code or I do like "Python".
-+ Due to the time limitation, I ignored the error handlings part which is actually really important
-  for handling api response.
