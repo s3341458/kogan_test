@@ -26,21 +26,21 @@ calculate_cubic_weight = compose(
 )
 
 
-extract_weights = compose(
+extract_aircon_weights = compose(
     list,
     partial(map, calculate_cubic_weight),
     partial(filter, lambda x: x['category'] == 'Air Conditioners'),
 )
 
 
-def retrieve_weights(kwargs):
+def retrieve_aircon_weights(kwargs):
     host = kwargs['host']
     endpoint = kwargs['endpoint']
     weights_list = []
     while True:
         r = requests.get('{}{}'.format(host, endpoint))
         endpoint = r.json()['next']
-        weights_list.extend(extract_weights(r.json()['objects']))
+        weights_list.extend(extract_aircon_weights(r.json()['objects']))
         if not endpoint:
             break
     return weights_list
@@ -48,5 +48,5 @@ def retrieve_weights(kwargs):
 
 calculate_aircon_cubic_weight_avg = compose(
     lambda weights: sum(weights) / len(weights),
-    retrieve_weights,
+    retrieve_aircon_weights,
 )
