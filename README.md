@@ -23,7 +23,7 @@ Open any browser and visit [Test Website](http://127.0.0.1:4000/)
 
 Run unit tests:
 
-    docker-compose run api_consumer pytest
+    docker-compose run --rm api_consumer pytest
 
 ### Needs to mention
 
