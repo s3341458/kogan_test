@@ -6,8 +6,8 @@ This project is for my [Kogan Code Chanllenge](https://kogan-recruitment.herokua
 
 The local development environment requires:
 
- - [Docker Compose](https://docs.docker.com/compose/install/)
  - [Docker](https://docs.docker.com/)
+ - [Docker Compose](https://docs.docker.com/compose/install/)
 
  See these links to install on your system.
 
@@ -31,4 +31,4 @@ Run unit tests:
 + Due to the time limitation, I ignored pydoc stuff although I know it is a important thing that you want to test.
 + Due to the time limitation, I ignored the error handlings part which is actually really important for handling api response.
 + I used a more "functional" way to do the work instead of a more "Pythonic" way for interests reason.
-  This does not mean I can not write "Pythonic" code or I do like "Python".
+  This does not mean I can not write "Pythonic" code or I do not like "Python".
