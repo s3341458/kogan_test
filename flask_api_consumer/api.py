@@ -16,7 +16,6 @@ def retrieve_products(kwargs):
     products_json = []
     while True:
         r = requests.get('{}{}'.format(host, endpoint))
-        print(r.json(), endpoint)
         endpoint = r.json()['next']
         products_json.extend(r.json()['objects'])
         if not endpoint:
